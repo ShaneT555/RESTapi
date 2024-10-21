@@ -21,10 +21,11 @@ const User = SQLconnection.define("User", {
         },
         unique: true,
         allowNull: false
-    }
-    password:{
+    },
+    password: {
         type: DataTypes.STRING,
-        unique: false
+        unique: true,
+        allowNull: false
     }
 })
 
